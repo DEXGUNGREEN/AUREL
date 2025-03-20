@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Votre Panier - Café Délice</title>
+  <link rel="shortcut icon" href="IMAGES/OIP2.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles3.css">
+<body>
+  <div class="panier-container">
+    <div class="panier-header">
+      <h1>Votre Panier</h1>
+      <p>Consultez les articles que vous avez sélectionnés</p>
+    </div>
+    
+    <div class="panier-items">
+      <h2>Articles sélectionnés</h2>
+      <ul id="cart-items">
+        <!-- Les éléments du panier seront ajoutés ici dynamiquement via JavaScript -->
+      </ul>
+      <div id="empty-cart-message" class="empty-cart">
+        Votre panier est vide.
+      </div>
+    </div>
+    
+    <div class="panier-summary">
+      <h2>Résumé de la commande</h2>
+      <div id="cart-summary">
+        <p>Nombre d'articles: <span id="items-count">0</span></p>
+        <p class="cart-total">Total: <span id="cart-total-price">0</span>€</p>
+      </div>
+    </div>
+    
+    <button id="checkout" class="checkout-btn">Procéder au paiement</button>
+    
+    <div style="text-align: center;">
+      <a href="index.html" class="return-btn">Continuer mes achats</a>
+    </div>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>

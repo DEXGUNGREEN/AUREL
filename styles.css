@@ -1,0 +1,173 @@
+body {
+    margin: 0 auto;
+    background-color: #f9f5f0;
+    box-sizing: border-box;    
+    overflow-x: hidden;
+}
+
+            /* Disposition image et menu defilant */
+
+.header {
+    background: url(IMAGES/BACKI.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}    
+
+#LOGI {
+    height: 20vh;
+    width: 20vh;
+}
+
+             /* Variation forme de la souris */
+
+nav:hover, details:hover {
+    cursor: pointer;
+}
+
+            /* Modifications du menu */
+
+#defl1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+#defl1[open] .list_me {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#def_list{
+    font-size: 100px;
+    list-style: none;
+    color: white;
+    margin-right: 20px;
+    /* display: none; */
+    /*visibility: hidden;*/
+}
+
+.list_me {
+    font-size: 24px;
+    list-style: none;
+    display: none;
+}
+
+#men_u {
+    text-decoration: none;
+    color: inherit;
+}
+
+            /* Slogan de bienvenue du haut de page */
+
+h1 {
+    font-size: 60px;
+    font-family: 'Tangerine', serif;
+    font-weight: 600;
+    text-shadow: 4px 4px 4px #5a1902;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 5px;
+}
+
+            /* Partie accueil */
+
+.middle1 {
+    display: flex;
+    justify-content: space-around;
+    font-size: 60px;
+}
+
+.mid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #7b243a;
+    text-shadow: 4px 4px 4px rgb(156, 72, 105);
+}
+
+.mid2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#Acc_id {
+    font-size: 20px;
+    list-style: none;
+    background-color: rgb(60, 132, 132);
+}
+ 
+            /* Image defilante, menu et produit */
+
+.num1 {
+    font-size: 36px;
+    font-family: 'Dancing Script', serif;
+    font-weight: 500;
+}
+
+.middle3 {
+    background: url(IMAGES/OIF2.jpg);
+    background-size: cover;
+    background-attachment: fixed ;
+    backdrop-filter: brightness(20%);
+    transition: transform 5s ease-in-out;
+}
+
+            /* Coordonnées du restaurant */
+
+.middle4 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.mid3 {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+}
+
+            /* Fin de page principale */
+
+.foot {
+    background: url(IMAGES/OIF1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#im3 {
+    margin: auto;
+    display: flex;
+    height: 20vh;
+    width: 20vh;
+}
+
+footer {
+    display: flex;
+    font-size: 25px;
+    justify-content: space-between;
+}
+
+.slog {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    font-size: 60px;
+    font-family: 'Tangerine', serif;
+}
+
+.copyright {
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family: 'Tangerine', serif;
+}

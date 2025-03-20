@@ -1,0 +1,113 @@
+/*body { 
+    background-color: #d2b48c;
+    text-align: center;
+    font-size: 50px;
+}*/
+.panier-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .panier-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .panier-items {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .panier-summary {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .empty-cart {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+  }
+  
+  .return-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: #555;
+    text-decoration: none;
+  }
+  
+  .return-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .remove-item {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 2px 6px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .cart-total {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-align: right;
+  }
+  
+  #floating-cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .cart-icon {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
