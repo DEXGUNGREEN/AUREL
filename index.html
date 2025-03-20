@@ -14,19 +14,25 @@
     <!-- Haut de la page principale -->
 
     <section class="header">
-        <div id="head">
+    <div id="head">
         <img id="LOGI" src="IMAGES/LOGI.png" alt="Logo de café Délice">
-        <details id="defl1">
-            <summary id="def_list"><span id="defl2">≡</span></summary>
-            <nav class="list_me">
-                <li><a id="men_u" href="#accueil">Accueil</a></li>
-                <li><a id="men_u" href="#midi1">Nos Menus</a></li>
-                <li><a id="men_u" href="#midi2">Nos Produits</a></li>
-                <li><a id="men_u" href="#midi3">Contactez-nous</a></li>
-            </nav>
-        </details>
+
+    <!-- Bouton hamburger pour mobile uniquement -->
+        <div class="menu-container"> 
+
+        <div class="mobile-menu-toggle">≡</div>
+    
+    <!-- Navigation toujours présente dans le DOM -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#midi1">Nos Menus</a></li>
+                <li><a href="#midi2">Nos Produits</a></li>
+                <li><a href="#midi3">Contactez-nous</a></li>
+            </ul>
+        </nav>
         </div>
-        <div>
+    </div>    
             <h1>Pause gourmande, café d'exception!</h1>
         </div>
     </section>

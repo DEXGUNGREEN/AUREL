@@ -18,6 +18,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    backdrop-filter: blur(1px);
 }    
 
 #LOGI {
@@ -31,38 +33,53 @@ nav:hover, details:hover {
     cursor: pointer;
 }
 
-            /* Modifications du menu */
+           /* menu defilant */
 
-#defl1 {
-    display: flex;
-    flex-direction: column;
-    margin-right: 40px;
+.menu-container {
+    position: relative;
 }
 
-#defl1[open] .list_me {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-}
-
-#def_list{
+.mobile-menu-toggle {
     font-size: 100px;
-    list-style: none;
     color: white;
-    margin-right: 20px;
-    /* display: none; */
-    /*visibility: hidden;*/
-}
-
-.list_me {
-    font-size: 24px;
-    list-style: none;
+    margin-right: 40px;
+    cursor: pointer;
+    display: block;
+}  
+        
+.main-nav {        
     display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 15px;
+    width: auto;
+    text-align: center;
+    background: none;
+    font-weight: 900;
 }
 
-#men_u {
+.main-nav.active {
+    display: block;
+    position: static;
+}
+        
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+        
+.main-nav li {
+    margin-bottom: 10px;
+}
+        
+.main-nav a {
     text-decoration: none;
-    color: inherit;
+    color: #333;
+    font-size: 24px;
+    display: block;
+    padding: 5px 0;
 }
 
             /* Slogan de bienvenue du haut de page */
@@ -170,4 +187,41 @@ footer {
     margin-bottom: 0px;
     font-size: 20px;
     font-family: 'Tangerine', serif;
+}
+
+@media (min-width: 768px) {
+    body {
+        width: auto;
+    }
+    
+    .mobile-menu-toggle {
+        display: none;
+    }
+    
+    .main-nav {
+        display: block;
+        position: static;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    .main-nav ul {
+        display: flex;
+    }
+    
+    .main-nav li {
+        margin: 0 20px 0 0;
+    }
+    
+    .main-nav a {
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    }
+    
+    .main-nav a:hover {
+        text-decoration: underline;
+    }
+    
 }
