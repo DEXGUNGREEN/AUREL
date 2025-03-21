@@ -1,45 +1,40 @@
 body {
-    text-align: center;
-    font-size: 15px;
     font-family: Arial, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
+    line-height: 1.6;
+    margin: 0;
     padding: 20px;
+    background-color: #f9f5f0;
+    color: #5a3a22;
 }
 
 h1 {
-    color: #2c3e50;
-    margin-bottom: 10px;
+    text-align: center;
+    color: #8b4513;
+    border-bottom: 2px solid #d2b48c;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 p {
-    font-family: 'Dancing Script', cursive;
-    font-size: 18px;
+    text-align: center;
+    font-style: italic;
     margin-bottom: 30px;
 }
 
-a {
-    font-family: 'Times New Roman', serif;
-    text-decoration: none;
-    color: #333;
-}
-
-/* Sections de produits */
 .produits-section {
     margin-bottom: 40px;
 }
 
 .section-title {
-    font-weight: bold;
-    color: #27ae60;
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: left;
-    border-bottom: 2px solid #e7e7e7;
+    text-align: center;
+    color: #8b4513;
+    border-bottom: 2px solid #d2b48c;
     padding-bottom: 10px;
+    margin: 40px 0 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
 }
 
-/* Conteneur pour les cartes de produits */
 .produits-container {
     display: flex;
     flex-wrap: wrap;
@@ -47,98 +42,118 @@ a {
     gap: 20px;
 }
 
-/* Cartes individuelles de produits */
 .produit-card {
-    width: 200px;
-    padding: 15px;
-    border-radius: 8px;
     background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
 }
 
-.produit-card:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-}
-
-/* Conteneur d'image avec effet de zoom */
 .image-container {
-    width: 150px;
-    height: 150px;
     overflow: hidden;
-    border-radius: 5px;
-    margin: 0 auto 10px;
+    border-radius: 8px;
 }
 
 .produit-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+    height: auto;
+    transition: transform 0.3s;
 }
 
-.image-container:hover .produit-image {
-    transform: scale(1.2);
+.produit-image:hover {
+    transform: scale(1.05);
 }
 
-/* Style pour les noms de produits */
 .produit-nom {
-    color: #8b4513;
-    font-style: italic;
-    font-size: 16px;
-    margin: 10px 0 5px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #a05a2c;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
-/* Style pour les descriptions */
 .description {
     font-style: italic;
-    color: #a0522d;
-    font-size: 14px;
-    margin: 0;
+    color: #5a3a22;
+    margin-bottom: 10px;
 }
 
-/* Panier */
-.panier {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #e74c3c;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.prix {
+    display: block;
+    font-weight: bold;
+    color: #8b4513;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.add-to-cart:hover {
+    background-color: #a05a2c;
+}
+
+details {
+    margin-top: 10px;
+}
+
+.order-form {
+    margin-top: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    gap: 10px;
 }
 
-.panier:hover {
-    transform: scale(1.1);
+.order-form label {
+    font-size: 0.9em;
+    color: #5a3a22;
+}
+
+.order-form input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #d2b48c;
+    border-radius: 4px;
+}
+
+.order-form button {
+    background-color: #a05a2c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.order-form button:hover {
+    background-color: #8b4513;
+}
+
+.panier {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .panier a {
-    color: white;
-    font-size: 20px;
+    font-size: 2em;
+    color: #8b4513;
+    text-decoration: none;
 }
 
-/* Responsive design */
+.panier a:hover {
+    color: #a05a2c;
+}
+
 @media (max-width: 768px) {
-    .produits-container {
-        justify-content: center;
-    }
-    
     .produit-card {
-        width: 160px;
-    }
-    
-    .image-container {
-        width: 120px;
-        height: 120px;
+        width: 100%;
+        max-width: 300px;
     }
 }

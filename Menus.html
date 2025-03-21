@@ -8,455 +8,465 @@
 </head>
 <body>
   <h1>_Menus_</h1>
+
+  <h2>Sur place \ A emporter</h2>
+
+  <h3>°Plats classiques</h3>
+  <p>Nous vous offrons:</p>
+  <ul>
+    <li>
+      <span class="produit">Steak-frites avec salade</span>: Un grand classique, servi avec une sauce au choix (béarnaise, poivre, etc.).
+      <img src="IMAGES/20.jpeg" alt="image">
+      <span>Prix : 18€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="1">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity1">Quantité :</label>
+          <input type="number" id="quantity1" name="quantity1" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
+
+    <li>
+      <span class="produit">Poulet rôti avec légumes sautés et riz</span>: Un plat équilibré et savoureux.
+      <img src="IMAGES/21.jpeg" alt="image">
+      <span>Prix : 16€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="2">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity2">Quantité :</label>
+          <input type="number" id="quantity2" name="quantity2" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
+    
+    <li>
+      <span class="produit">Burger maison avec frites et coleslaw</span>: Disponible en version bœuf, poulet, ou végétarien.
+      <img src="IMAGES/22.jpeg" alt="image">
+      <span>Prix : 14€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="3">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity3">Quantité :</label>
+          <input type="number" id="quantity3" name="quantity3" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
+    
+    <li>
+      <span class="produit">Poisson grillé avec purée et légumes vapeur</span>: Léger et nourrissant.
+      <img src="IMAGES/23.jpeg" alt="image">
+      <span>Prix : 17€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="4">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity4">Quantité :</label>
+          <input type="number" id="quantity4" name="quantity4" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>     
+    </li>
+
+    <li>
+      <span class="produit">Omelette aux champignons avec pain et salade verte</span>: Idéal pour un repas rapide et complet.
+      <img src="IMAGES/24.jpeg" alt="image"> 
+      <span>Prix : 10€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="5">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity5">Quantité :</label>
+          <input type="number" id="quantity5" name="quantity5" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>     
+    </li>
+  </ul>
   
+  <h3>°Plats internationaux</h3>
+  <p>Nous vous offrons:</p>
+  <ul>
+    <li>
+      <span class="produit">Pasta carbonara ou bolognaise</span>: Un grand classique italien.
+      <img src="IMAGES/25.jpeg" alt="image">
+      <span>Prix : 13€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="6">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity6">Quantité :</label>
+          <input type="number" id="quantity6" name="quantity6" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
+
+    <li>
+      <span class="produit">Pad thaï aux crevettes ou poulet</span>: Un plat thaïlandais riche en saveurs.
+      <img src="IMAGES/26.jpeg" alt="image">
+      <span>Prix : 15€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="7">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity7">Quantité :</label>
+          <input type="number" id="quantity7" name="quantity7" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
+    
+    <li>
+      <span class="produit">Tacos garnis avec salade et frites</span>: En version mexicaine complète.
+      <img src="IMAGES/27.jpeg" alt="image">
+      <span>Prix : 12€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="8">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity8">Quantité :</label>
+          <input type="number" id="quantity8" name="quantity8" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
+    
+    <li>
+      <span class="produit">Couscous royal avec légumes et viandes variées</span>: Un plat généreux.
+      <img src="IMAGES/28.jpeg" alt="image">
+      <span>Prix : 19€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="9">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity9">Quantité :</label>
+          <input type="number" id="quantity9" name="quantity9" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>     
+    </li>
+
+    <li>
+      <span class="produit">Poké bowl au saumon ou au tofu</span>: Frais et équilibré.
+      <img src="IMAGES/29.jpeg" alt="image">
+      <span>Prix : 15€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="10">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity10">Quantité :</label>
+          <input type="number" id="quantity10" name="quantity10" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>     
+    </li>
+  </ul>
+
+  <h3>°Plats végétariens/végan</h3>
+  <p>Nous vous offrons:</p>
+  <ul>
+    <li>
+      <span class="produit">Salade de quinoa avec pois chiches, avocat et légumes grillés</span>: Un mélange coloré et nutritif.
+      <img src="IMAGES/30.jpeg" alt="image">
+      <span>Prix : 12€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="11">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity11">Quantité :</label>
+          <input type="number" id="quantity11" name="quantity11" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
+
+    <li>
+      <span class="produit">Curry de lentilles avec riz basmati</span>: Un plat épicé et réconfortant.
+      <img src="IMAGES/31.jpeg" alt="image">
+      <span>Prix : 13€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="12">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity12">Quantité :</label>
+          <input type="number" id="quantity12" name="quantity12" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
+    
+    <li>
+      <span class="produit">Burger végétarien avec steak de pois chiches et frites de patate douce</span>: Savoureux et croustillant.
+      <img src="IMAGES/32.jpeg" alt="image">
+      <span>Prix : 14€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="13">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity13">Quantité :</label>
+          <input type="number" id="quantity13" name="quantity13" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
+    
+    <li>
+      <span class="produit">Risotto aux champignons et parmesan</span>: Crémeux et gourmand.
+      <img src="IMAGES/33.jpeg" alt="image">
+      <span>Prix : 15€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="14">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity14">Quantité :</label>
+          <input type="number" id="quantity14" name="quantity14" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>     
+    </li>
+
+    <li>
+      <span class="produit">Wrap aux légumes marinés et houmous</span>: Frais et savoureux.
+      <img src="IMAGES/34.jpeg" alt="image">
+      <span>Prix : 11€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="15">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity15">Quantité :</label>
+          <input type="number" id="quantity15" name="quantity15" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>     
+    </li>
+  </ul>
+
+  <h2>A commander \ A emporter</h2>
   <h3>°Boissons et rafraichissement</h3>
   <p>Nous vous offrons:</p>
   <ul>
     <li>
       <span class="produit">Cafés spéciaux</span>: Latte caramel beurre salé, Cappuccino à la noisette, Espresso macchiato.
+      <picture>
+        <source srcset="IMAGES/1.jpg" type="image/jpg">
+        <img src="https://i.ibb.co/PvsmKncH/17545122.jpg" alt="17545122">
+      </picture>
+      <span>Prix : 5€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="16">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity16">Quantité :</label>
+          <input type="number" id="quantity16" name="quantity16" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
     </li>
-    <picture>
-      <source srcset="IMAGES/1.jpg" type="image/jpg">
-      <img src="https://i.ibb.co/PvsmKncH/17545122.jpg" alt="17545122">
-    </picture>
-    <span>Prix : 20€</span>
-    <details id="detail">
-      <summary><button id="buton" data-id="1">Ajouter au panier</button></summary>
-      <form id="order-form">
-        <label for="quantity1">Quantité pour Produit 1 :</label>
-        <input type="number" id="quantity1" name="quantity1" min="1" />
-        <button type="submit">Valider</button>
-      </form>    
-    </details>
 
     <li>
       <span class="produit">Chocolats chauds gourmands</span>: Chocolat chaud aux éclats de praliné, Chocolat blanc à la framboise.
       <img src="IMAGES/1-1.jpg" alt="image">
-      <span>Prix : 20€</span>
-    <details id="detail">
-      <summary><button id="buton" data-id="20">Ajouter au panier</button></summary>
-      <form id="order-form">
-        <label for="quantity20">Quantité pour Produit 20 :</label>
-        <input type="number" id="quantity20" name="quantity1" min="1" />
-        <button type="submit">Valider</button>
-      </form>    
-    </details>
+      <span>Prix : 6€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="17">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity17">Quantité :</label>
+          <input type="number" id="quantity17" name="quantity17" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
     </li>
     
     <li>
       <span class="produit">Thés et infusions</span>: Thé matcha latte, Infusion citron-gingembre-miel.
+      <picture>
+        <source srcset="IMAGES/2.webp" type="image/webp">
+        <img src="https://i.ibb.co/4nLdDgGw/file-Y8-EMr4-ALS4j-QJb-Ujw-Fho2-C.webp" alt="file-Y8-EMr4-ALS4j-QJb-Ujw-Fho2-C" border="0">
+      </picture> 
+      <span>Prix : 4€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="18">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity18">Quantité :</label>
+          <input type="number" id="quantity18" name="quantity18" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
     </li>
-    <picture>
-      <source srcset="IMAGES/2.webp" type="image/webp">
-      <img src="https://i.ibb.co/4nLdDgGw/file-Y8-EMr4-ALS4j-QJb-Ujw-Fho2-C.webp" alt="file-Y8-EMr4-ALS4j-QJb-Ujw-Fho2-C" border="0">
-    </picture> 
-    <span>Prix : 20€</span>
-    <details id="detail">
-      <summary><button id="buton" data-id="2">Ajouter au panier</button></summary>
-      <form id="order-form">
-        <label for="quantity2">Quantité pour Produit 2 :</label>
-        <input type="number" id="quantity2" name="quantity2" min="1" />
-        <button type="submit">Valider</button>
-      </form>    
-    </details>
     
     <li>
       <span class="produit">Boissons froides</span>: Café frappé, Bubble coffee, Cold brew infusé aux épices.
+      <picture>
+        <source srcset="IMAGES/3.webp" type="image/webp">
+        <img src="https://i.ibb.co/nqMKLXjK/file-PJcf92-Fb-Hkgz4-ASC8-Bb-Qge.webp" alt="file-PJcf92-Fb-Hkgz4-ASC8-Bb-Qge" border="0">
+      </picture> 
+      <span>Prix : 5€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="19">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity19">Quantité :</label>
+          <input type="number" id="quantity19" name="quantity19" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>     
     </li>
-    <picture>
-      <source srcset="IMAGES/3.webp" type="image/webp">
-      <img src="https://i.ibb.co/nqMKLXjK/file-PJcf92-Fb-Hkgz4-ASC8-Bb-Qge.webp" alt="file-PJcf92-Fb-Hkgz4-ASC8-Bb-Qge" border="0">
-    </picture> 
-    <span>Prix : 20€</span>
-    <details id="detail">
-      <summary><button id="buton" data-id="3">Ajouter au panier</button></summary>
-      <form id="order-form">
-        <label for="quantity3">Quantité pour Produit 3 :</label>
-        <input type="number" id="quantity3" name="quantity3" min="1" />
-        <button type="submit">Valider</button>
-      </form>    
-    </details>     
   </ul>
   
   <h3>°Nos Pâtisseries et viennoiseries</h3>
-<p>Nous vous offrons:</p>
-<ul>
-  <li>
-    <span class="produit">Tartes et gâteaux:</span> Cheesecake pistache-framboise, Tarte citron meringuée revisitée.
-  </li>
-  <picture>
-    <source srcset="IMAGES/4.jpg" type="image/jpeg">
-    <img src="https://i.ibb.co/TBQz0tBT/3082569247.jpg" alt="3082569247">
-  </picture>
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="4">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity4">Quantité pour Produit 4 :</label>
-      <input type="number" id="quantity4" name="quantity4" min="1" />
-      <button type="submit">Valider</button>
-    </form>    
-  </details>
+  <p>Nous vous offrons:</p>
+  <ul>
+    <li>
+      <span class="produit">Tartes et gâteaux</span>: Cheesecake pistache-framboise, Tarte citron meringuée revisitée.
+      <picture>
+        <source srcset="IMAGES/4.jpg" type="image/jpeg">
+        <img src="https://i.ibb.co/TBQz0tBT/3082569247.jpg" alt="3082569247">
+      </picture>
+      <span>Prix : 7€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="20">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity20">Quantité :</label>
+          <input type="number" id="quantity20" name="quantity20" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
 
-  <li>
-    <span class="produit">Viennoiseries maison:</span> Croissants fourrés au chocolat blanc, Pain aux amandes et miel.
-    <img src="IMAGES/1-2.jpg" alt="image">
-    <span>Prix : 20€</span>
-    <details id="detail">
-      <summary><button id="buton" data-id="21">Ajouter au panier</button></summary>
-      <form id="order-form">
-        <label for="quantity21">Quantité pour Produit 21 :</label>
-        <input type="number" id="quantity21" name="quantity21" min="1" />
-        <button type="submit">Valider</button>
-      </form>    
-    </details>
-  </li>
-  <li>
-    <span class="produit">Cookies et biscuits:</span> Cookies au caramel beurre salé, Sablés à la vanille et noisette.
-    <img src="IMAGES/1-3.jpg" alt="image">
-    <span>Prix : 20€</span>
-    <details id="detail">
-      <summary><button id="buton" data-id="22">Ajouter au panier</button></summary>
-      <form id="order-form">
-        <label for="quantity22">Quantité pour Produit 22 :</label>
-        <input type="number" id="quantity22" name="quantity22" min="1" />
-        <button type="submit">Valider</button>
-      </form>    
-    </details>
-  </li>
-</ul>
+    <li>
+      <span class="produit">Viennoiseries maison</span>: Croissants fourrés au chocolat blanc, Pain aux amandes et miel.
+      <img src="IMAGES/1-2.jpg" alt="image">
+      <span>Prix : 3€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="21">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity21">Quantité :</label>
+          <input type="number" id="quantity21" name="quantity21" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
+    
+    <li>
+      <span class="produit">Cookies et biscuits</span>: Cookies au caramel beurre salé, Sablés à la vanille et noisette.
+      <img src="IMAGES/1-3.jpg" alt="image">
+      <span>Prix : 2€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="22">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity22">Quantité :</label>
+          <input type="number" id="quantity22" name="quantity22" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
+  </ul>
 
-<h3>°Snacks et brunchs</h3>
-<p>Nous vous offrons:</p>
-<ul>
-  <li>
-    <span class="produit">Bagels et sandwiches gourmets:</span> Bagel saumon-avocat, Panini mozza-pesto.
-    <img src="IMAGES/1-4.jpg" alt="image">
-    <span>Prix : 20€</span>
-    <details id="detail">
-      <summary><button id="buton" data-id="23">Ajouter au panier</button></summary>
-      <form id="order-form">
-        <label for="quantity23">Quantité pour Produit 23 :</label>
-        <input type="number" id="quantity23" name="quantity23" min="1" />
-        <button type="submit">Valider</button>
-      </form>    
-    </details>
-  </li>
-  <li>
-    <span class="produit">Tartines sucrées et salées:</span> Tartine ricotta-miel-noix, Avocado toast au poivre rose.
-  </li>
-  <picture>
-    <source srcset="IMAGES/5.jpg" type="image/jpeg">
-    <img src="https://i.ibb.co/hxX8wvpR/1599756917.jpg" alt="1599756917">
-  </picture>
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="5">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity5">Quantité pour Produit 5 :</label>
-      <input type="number" id="quantity5" name="quantity5" min="1" />
-      <button type="submit">Valider</button>
-    </form>    
-  </details>
+  <h3>°Snacks et brunchs</h3>
+  <p>Nous vous offrons:</p>
+  <ul>
+    <li>
+      <span class="produit">Bagels et sandwiches gourmets</span>: Bagel saumon-avocat, Panini mozza-pesto.
+      <img src="IMAGES/1-4.jpg" alt="image">
+      <span>Prix : 8€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="23">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity23">Quantité :</label>
+          <input type="number" id="quantity23" name="quantity23" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
+    
+    <li>
+      <span class="produit">Tartines sucrées et salées</span>: Tartine ricotta-miel-noix, Avocado toast au poivre rose.
+      <picture>
+        <source srcset="IMAGES/5.jpg" type="image/jpeg">
+        <img src="https://i.ibb.co/hxX8wvpR/1599756917.jpg" alt="1599756917">
+      </picture>
+      <span>Prix : 7€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="24">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity24">Quantité :</label>
+          <input type="number" id="quantity24" name="quantity24" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
 
-  <li>
-    <span class="produit">Poke bowls et salades:</span> Bowl quinoa-mangue-grenade, Salade césar revisitée.
-    <img src="IMAGES/1-5.jpg" alt="image">
-    <span>Prix : 20€</span>
-    <details id="detail">
-      <summary><button id="buton" data-id="24">Ajouter au panier</button></summary>
-      <form id="order-form">
-        <label for="quantity24">Quantité pour Produit 24 :</label>
-        <input type="number" id="quantity24" name="quantity24" min="1" />
-        <button type="submit">Valider</button>
-      </form>    
-    </details>
-  </li>
-</ul>
+    <li>
+      <span class="produit">Poke bowls et salades</span>: Bowl quinoa-mangue-grenade, Salade césar revisitée.
+      <img src="IMAGES/1-5.jpg" alt="image">
+      <span>Prix : 12€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="25">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity25">Quantité :</label>
+          <input type="number" id="quantity25" name="quantity25" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
+  </ul>
 
-<h3>°Produits exclusifs et à emporter</h3>
-<p>Nous vous offrons:</p>
-<ul>
-  <li>
-    <span class="produit">Box petit-déjeuner/brunch:</span> Mini-viennoiseries, jus frais, café au choix.
-    <img src="IMAGES/1-6.jpg" alt="image">
-    <span>Prix : 20€</span>
-    <details id="detail">
-      <summary><button id="buton" data-id="25">Ajouter au panier</button></summary>
-      <form id="order-form">
-        <label for="quantity25">Quantité pour Produit 25 :</label>
-        <input type="number" id="quantity25" name="quantity25" min="1" />
-        <button type="submit">Valider</button>
-      </form>    
-    </details>
-  </li>
-  <li>
-    <span class="produit">Kits de café à la maison:</span> Grains de café maison, dosettes artisanales.
-    <img src="IMAGES/1-7.jpg" alt="image">
-    <span>Prix : 20€</span>
-    <details id="detail">
-      <summary><button id="buton" data-id="26">Ajouter au panier</button></summary>
-      <form id="order-form">
-        <label for="quantity26">Quantité pour Produit 26 :</label>
-        <input type="number" id="quantity26" name="quantity26" min="1" />
-        <button type="submit">Valider</button>
-      </form>    
-    </details>
-  </li>
-  <li>
-    <span class="produit">Confiseries et chocolats maison:</span> Barres de chocolat maison, caramels fondants.
-  </li>
-  <picture>
-    <source srcset="IMAGES/6.jpg" type="image/jpg">
-    <img src="https://i.ibb.co/KJcMVxk/Screenshot-20250309-173557-1.jpg" alt="Screenshot-20250309-173557-1">
-  </picture>
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="6">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity6">Quantité pour Produit 6 :</label>
-      <input type="number" id="quantity6" name="quantity6" min="1" />
-      <button type="submit">Valider</button>
-    </form> 
-  </details>     
+  <h3>°Produits exclusifs et à emporter</h3>
+  <p>Nous vous offrons:</p>
+  <ul>
+    <li>
+      <span class="produit">Box petit-déjeuner/brunch</span>: Mini-viennoiseries, jus frais, café au choix.
+      <img src="IMAGES/1-6.jpg" alt="image">
+      <span>Prix : 15€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="26">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity26">Quantité :</label>
+          <input type="number" id="quantity26" name="quantity26" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
+    
+    <li>
+      <span class="produit">Kits de café à la maison</span>: Grains de café maison, dosettes artisanales.
+      <img src="IMAGES/1-7.jpg" alt="image">
+      <span>Prix : 10€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="27">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity27">Quantité :</label>
+          <input type="number" id="quantity27" name="quantity27" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form>    
+      </details>
+    </li>
+    
+    <li>
+      <span class="produit">Confiseries et chocolats maison</span>: Barres de chocolat maison, caramels fondants.
+      <picture>
+        <source srcset="IMAGES/6.jpg" type="image/jpg">
+        <img src="https://i.ibb.co/KJcMVxk/Screenshot-20250309-173557-1.jpg" alt="Screenshot-20250309-173557-1">
+      </picture>
+      <span>Prix : 4€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="28">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity28">Quantité :</label>
+          <input type="number" id="quantity28" name="quantity28" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form> 
+      </details>     
+    </li>
 
-  <li>
-    <span class="produit">Confitures et pâtes à tartiner maison:</span> Confiture mangue-passion, pâte à tartiner chocolat-noisette sans huile de palme.
-  </li>
-  <picture>
-    <source srcset="IMAGES/7.jpg" type="image/jpg">
-    <img src="https://i.ibb.co/zWvQvvW3/Screenshot-20250309-173414-1.jpg" alt="Screenshot-20250309-173414-1">
-  </picture>
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="7">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity7">Quantité pour Produit 7 :</label>
-      <input type="number" id="quantity7" name="quantity7" min="1" />
-      <button type="submit">Valider</button>
-    </form> 
-  </details>     
-</ul>
+    <li>
+      <span class="produit">Confitures et pâtes à tartiner maison</span>: Confiture mangue-passion, pâte à tartiner chocolat-noisette sans huile de palme.
+      <picture>
+        <source srcset="IMAGES/7.jpg" type="image/jpg">
+        <img src="https://i.ibb.co/zWvQvvW3/Screenshot-20250309-173414-1.jpg" alt="Screenshot-20250309-173414-1">
+      </picture>
+      <span>Prix : 6€</span>
+      <details>
+        <summary><button class="add-to-cart" data-id="29">Ajouter au panier</button></summary>
+        <form id="order-form">
+          <label for="quantity29">Quantité :</label>
+          <input type="number" id="quantity29" name="quantity29" min="1" value="1" />
+          <button type="submit">Valider</button>
+        </form> 
+      </details>     
+    </li>
+  </ul>
 
-<h3 class="section-title">--Électroménagers--</h3>
-
-<h3>°Accessoires de café connectés</h3>
-<p>Nous disposons:</p>
-<ul>
-  <li>
-    <span class="produit">Moulin à café électrique intelligent:</span> Permet de régler la mouture via une application mobile.
-  </li>
-  <picture>
-    <source srcset="IMAGES/8.jpg" type="image/jpg">
-    <img src="https://i.ibb.co/MD5Tz5PC/Screenshot-20250309-184701-1.jpg" alt="Screenshot-20250309-184701-1">
-  </picture>
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="8">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity8">Quantité pour Produit 8 :</label>
-      <input type="number" id="quantity8" name="quantity8" min="1" />
-      <button type="submit">Valider</button>
-    </form>    
-  </details>
-
-  <li>
-    <span class="produit">Machine à café connectée:</span> Programmable à distance avec différents modes d'infusion.
-  </li>
-  <picture>
-    <source srcset="IMAGES/9.jpg" type="image/jpg">
-    <img src="https://i.ibb.co/kV89kp7p/Screenshot-20250309-184840-1.jpg" alt="Screenshot-20250309-184840-1">
-  </picture>
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="9">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity9">Quantité pour Produit 9 :</label>
-      <input type="number" id="quantity9" name="quantity9" min="1" />
-      <button type="submit">Valider</button>
-    </form>    
-  </details>
-
-  <li>
-    <span class="produit">Mug chauffant intelligent:</span> Maintient la boisson à la température idéale.
-  </li>
-  <picture>
-    <source srcset="IMAGES/10.jpg" type="image/jpg">
-    <img src="https://i.ibb.co/bjzWT7gq/Screenshot-20250309-185104-1.jpg" alt="Screenshot-20250309-185104-1">
-  </picture>
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="10">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity10">Quantité pour Produit 10 :</label>
-      <input type="number" id="quantity10" name="quantity10" min="1" />
-      <button type="submit">Valider</button>
-    </form>    
-  </details>
-
-  <li>
-    <span class="produit">Mousseur à lait électrique:</span> Pour des cappuccinos et lattes parfaits.
-  </li>
-  <picture>
-    <source srcset="IMAGES/11.jpg" type="image/jpg">
-    <img src="https://i.ibb.co/qQ98dQy/Screenshot-20250309-185230-1.jpg" alt="Screenshot-20250309-185230-1">
-  </picture>
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="11">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity11">Quantité pour Produit 11 :</label>
-      <input type="number" id="quantity11" name="quantity11" min="1" />
-      <button type="submit">Valider</button>
-    </form>    
-  </details>
-
-</ul>
-
-<h3>°Produits high-tech pour l'expérience client</h3>
-<p>Nous disposons:</p>
-<ul>
-  <li>
-    <span class="produit">Plateau chauffant USB:</span> Pour garder son café chaud sur le bureau.
-  </li>
-  <picture>
-    <source srcset="IMAGES/12.jpg" type="image/jpg">
-    <img src="https://i.ibb.co/xKptrxyn/Screenshot-20250309-182919-1.jpg" alt="Screenshot-20250309-182919-1">
-  </picture>
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="12">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity12">Quantité pour Produit 12 :</label>
-      <input type="number" id="quantity12" name="quantity12" min="1" />
-      <button type="submit">Valider</button>
-    </form>    
-  </details>
-
-  <li>
-    <span class="produit">Cuillère de mélange automatique:</span> Idéale pour les boissons chocolatées ou sucrées.
-  </li>
-  <picture>
-    <source srcset="IMAGES/13.jpg" type="image/jpg">
-    <img src="https://i.ibb.co/wFrqdt7s/Screenshot-20250309-183111-1.jpg" alt="Screenshot-20250309-183111-1">
-  </picture>
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="13">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity13">Quantité pour Produit 13 :</label>
-      <input type="number" id="quantity13" name="quantity13" min="1" />
-      <button type="submit">Valider</button>
-    </form>    
-  </details>
-
-  <li>
-    <span class="produit">Enceinte Bluetooth en forme de tasse de café:</span> Design original pour les amateurs de café et de musique.
-  </li>
-  <picture>
-    <source srcset="IMAGES/14.jpg" type="image/jpg">
-    <img src="https://i.ibb.co/QvHPSfXB/Screenshot-20250309-183442-1.jpg" alt="Screenshot-20250309-183442-1">
-  </picture>
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="14">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity14">Quantité pour Produit 14 :</label>
-      <input type="number" id="quantity14" name="quantity14" min="1" />
-      <button type="submit">Valider</button>
-    </form>    
-  </details>
-
-  <li>
-    <span class="produit">Lampe aromatique à capsules de café usagées:</span> Un produit éco-friendly qui diffuse une ambiance chaleureuse.
-  </li>
-  <picture>
-    <source srcset="IMAGES/15.jpg" type="image/jpg">
-    <img src="https://i.ibb.co/fd0mvLxD/Screenshot-20250309-184016-1.jpg" alt="Screenshot-20250309-184016-1">
-  </picture>
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="15">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity15">Quantité pour Produit 15 :</label>
-      <input type="number" id="quantity15" name="quantity15" min="1" />
-      <button type="submit">Valider</button>
-    </form>    
-  </details>
-
-</ul>
-
-<h3>°Gadgets et lifestyle</h3>
-<p>Nous disposons:</p>
-<ul>
-  <li>
-    <span class="produit">Balance de précision connectée:</span> Pour doser le café avec exactitude.
-  </li>
-  <picture>
-    <source srcset="IMAGES/16.jpg" type="image/jpg">
-    <img src="https://i.ibb.co/bgNddz8q/Screenshot-20250309-185422-1.jpg" alt="Screenshot-20250309-185422-1">
-  </picture>
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="16">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity16">Quantité pour Produit 16 :</label>
-      <input type="number" id="quantity16" name="quantity16" min="1" />
-      <button type="submit">Valider</button>
-    </form>    
-  </details>
-  <li>
-    <span class="produit">Batterie externe avec mug chauffant:</span> Un accessoire original et utile.
-  </li>
-  <picture>
-    <source srcset="IMAGES/17.jpg" type="image/jpg">
-    <img src="https://i.ibb.co/1J0KXxR9/Screenshot-20250310-072238-1.jpg" alt="Screenshot-20250310-072238-1">
-  </picture>
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="17">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity17">Quantité pour Produit 17 :</label>
-      <input type="number" id="quantity17" name="quantity17" min="1" />
-      <button type="submit">Valider</button>
-    </form>    
-  </details>
-
-  <li>
-    <span class="produit">Lunettes anti-lumière bleue avec monture en grain de café recyclé:</span> Mélange de tech et d'éco-responsabilité.
-  </li>
-  <picture>
-    <source srcset="IMAGES/18.jpg" type="image/jpg">
-    <img src="https://i.ibb.co/Y4zkPt2g/Screenshot-20250309-185744-1.jpg" alt="Screenshot-20250309-185744-1" border="0">
-  </picture>  
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="18">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity18">Quantité pour Produit 18 :</label>
-      <input type="number" id="quantity18" name="quantity18" min="1" />
-      <button type="submit">Valider</button>
-    </form>    
-  </details>
-
-  <li>
-    <span class="produit">Diffuseur d'arôme de café USB:</span> Pour une atmosphère caféinée sans même boire une tasse.
-  </li>
-  <li>
-  <picture>
-    <source srcset="IMAGES/19.jpg" type="image/jpg">
-    <img src="https://i.ibb.co/wZ5Nwrd7/Screenshot-20250309-185949-1.jpg" alt="Screenshot-20250309-185949-1" border="0"> 
-  </picture>
-  <span>Prix : 20€</span>
-  <details id="detail">
-    <summary><button id="buton" data-id="19">Ajouter au panier</button></summary>
-    <form id="order-form">
-      <label for="quantity19">Quantité pour Produit 19 :</label>
-      <input type="number" id="quantity19" name="quantity19" min="1" />
-      <button type="submit">Valider</button>
-    </form>    
-  </details>
-  </li>
   <section class="panier">
     <div id="cart-summary">
       <h2>Résumé du Panier</h2>
@@ -464,6 +474,6 @@
     </div>
     <button id="checkout">Passer à la caisse</button>
   </section>
-<script src="script1.js"></script>
+  <script src="script1.js"></script>
 </body>
 </html>

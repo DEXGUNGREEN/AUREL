@@ -8,10 +8,11 @@ body {
             /* Disposition image et menu defilant */
 
 .header {
-    background: url(IMAGES/BACKI.webp);
+    background: url(IMAGES/BACKI.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
+    margin-bottom: -40px;
 }
 
 #head {
@@ -19,7 +20,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(0.6px);
 }    
 
 #LOGI {
@@ -41,7 +42,8 @@ nav:hover, details:hover {
 
 .mobile-menu-toggle {
     font-size: 100px;
-    color: white;
+    font-weight: 600;
+    color: rgb(43, 4, 17);
     margin-right: 40px;
     cursor: pointer;
     display: block;
@@ -57,6 +59,10 @@ nav:hover, details:hover {
     text-align: center;
     background: none;
     font-weight: 900;
+}
+
+.main-nav li a{
+    color: rgb(43, 4, 17);
 }
 
 .main-nav.active {
@@ -100,7 +106,8 @@ h1 {
     display: flex;
     justify-content: space-around;
     font-size: 60px;
-}
+    /* margin-top: -40px; */
+}    
 
 .mid {
     display: flex;
@@ -108,17 +115,28 @@ h1 {
     flex-direction: column;
     color: #7b243a;
     text-shadow: 4px 4px 4px rgb(156, 72, 105);
+    transition: transform 0.2s ease, text-shadow 0.4s ease;
+}
+
+.mid:hover {
+    transform: translateY(5px);
+    font-size: 100px;
+    text-shadow: 8px 8px 8px rgb(103, 33, 61);
 }
 
 .mid2 {
     text-align: center;
     font-size: 20px;
+    margin-top: -20px;
 }
 
 #Acc_id {
     font-size: 20px;
     list-style: none;
-    background-color: rgb(60, 132, 132);
+    color: rgb(187, 29, 155);
+    font-weight: 600;
+    text-shadow: 6px 6px 6px #333;
+    margin-bottom: 15px;
 }
  
             /* Image defilante, menu et produit */
@@ -132,9 +150,169 @@ h1 {
 .middle3 {
     background: url(IMAGES/OIF2.jpg);
     background-size: cover;
+    background-position: center;
     background-attachment: fixed ;
     backdrop-filter: brightness(20%);
     transition: transform 5s ease-in-out;
+}
+
+.mid {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    backdrop-filter: blur(1);
+}
+
+.num1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #944a4a;
+    position: relative;
+}
+
+.num1::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: #944a4a;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-container1 {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    padding: 40px;
+    background-color: rgba(255, 253, 253, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.menu-container1:hover {
+    background-color: rgba(249, 249, 249, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: rgb(84, 31, 31);
+}
+
+.menu-container1::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid #825d5d;
+    border-radius: 15px;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.corner {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ba6c6c;
+}
+
+.top-left {
+    top: -5px;
+    left: -5px;
+    border-radius: 50% 0 0 0;
+}
+
+.top-right {
+    top: -5px;
+    right: -5px;
+    border-radius: 0 50% 0 0;
+}
+
+.bottom-left {
+    bottom: -5px;
+    left: -5px;
+    border-radius: 0 0 0 50%;
+}
+
+.bottom-right {
+    bottom: -5px;
+    right: -5px;
+    border-radius: 0 0 50% 0;
+}
+
+.red-corner {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.red-top-left {
+    top: 15px;
+    left: 15px;
+    border-top: 2px solid #e74c3c;
+    border-left: 2px solid #e74c3c;
+}
+
+.red-top-right {
+    top: 15px;
+    right: 15px;
+    border-top: 2px solid #e74c3c;
+    border-right: 2px solid #e74c3c;
+}
+
+.red-bottom-left {
+    bottom: 15px;
+    left: 15px;
+    border-bottom: 2px solid #e74c3c;
+    border-left: 2px solid #e74c3c;
+}
+
+.red-bottom-right {
+    bottom: 15px;
+    right: 15px;
+    border-bottom: 2px solid #e74c3c;
+    border-right: 2px solid #e74c3c;
+}
+
+.menu-content {
+    height: 100%;
+    color: rgb(222, 220, 247);
+    font-weight: 900;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.menu-item {
+    padding: 15px;
+    border-bottom: 1px dotted #944a4a;
+}
+
+.menu-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #944a4a;
+}
+
+.menu-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #f6c4c4;
+    margin-top: 8px;
+    font-size: 25px;
 }
 
             /* Coordonnées du restaurant */
@@ -143,6 +321,7 @@ h1 {
     display: flex;
     justify-content: center;
     font-size: 30px;
+    margin-bottom: -60px;
 }
 
 .mid3 {
@@ -150,7 +329,7 @@ h1 {
     justify-content: center;
     list-style: none;
     font-size: 50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Playfair Display';
     font-weight: 100;
 }
 
@@ -187,6 +366,12 @@ footer {
     margin-bottom: 0px;
     font-size: 20px;
     font-family: 'Tangerine', serif;
+}
+
+@media (max-width: 768px) {
+    .menu-content {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (min-width: 768px) {
