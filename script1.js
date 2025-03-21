@@ -1,7 +1,7 @@
-// Initialiser le panier depuis le localStorage ou créer un nouveau tableau vide
+// Initialiser le panier depuis le localStorage ou créer un tableau vide
 let panier = JSON.parse(localStorage.getItem('cafeDelicePanier')) || [];
 
-// Fonction pour mettre à jour l'indicateur de nombre d'articles dans le panier
+// Mettre à jour l'indicateur du panier (s'il existe)
 function updateCartIndicator() {
   const cartIndicator = document.getElementById('cart-count');
   if (cartIndicator) {
@@ -11,7 +11,7 @@ function updateCartIndicator() {
   }
 }
 
-// Ajouter une icône de panier flottante à la page
+// Ajouter une icône de panier flottante
 function addCartIcon() {
   if (!document.getElementById('floating-cart')) {
     const cartIcon = document.createElement('div');
@@ -34,52 +34,63 @@ function addCartIcon() {
   }
 }
 
-// Ouvrir/fermer les détails au clic sur "Ajouter au panier"
-document.querySelectorAll("button[data-id]").forEach(bouton => {
-  bouton.addEventListener("click", function(event) {
-    event.preventDefault();
-    let detail = this.closest("details");
-    detail.open = !detail.open;
-  });
-});
+// Récupérer le nom du produit
+function getProductName(element) {
+  const productElement = element.closest('li').querySelector('.produit');
+  return productElement ? productElement.textContent : 'Produit inconnu';
+}
 
-// Gérer la soumission du formulaire pour ajouter au panier
-document.querySelectorAll('form.order-form, form[id="order-form"]').forEach(form => {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const button = form.closest('details').querySelector('button[data-id]');
-    const productId = button.getAttribute('data-id');
-    const quantityInput = form.querySelector('input[type="number"]');
-    const quantity = parseInt(quantityInput.value) || 1;
-    const priceElement = form.closest('li, .produit-card').querySelector('.prix');
-    const price = parseFloat(priceElement.textContent.replace('Prix : ', '').replace('€', ''));
-
-    // Vérifier si le produit existe déjà dans le panier
-    const existingItem = panier.find(item => item.id === productId);
-    if (existingItem) {
-      existingItem.quantity += quantity;
-    } else {
-      panier.push({ id: productId, quantity: quantity, price: price });
-    }
-
-    // Sauvegarder le panier dans le localStorage
-    localStorage.setItem('cafeDelicePanier', JSON.stringify(panier));
-
-    // Mettre à jour l'indicateur du panier
-    updateCartIndicator();
-
-    // Afficher une confirmation
-    alert(`Produit ${productId} ajouté au panier (${quantity} fois) !`);
-
-    // Réinitialiser le formulaire et fermer les détails
-    form.reset();
-    form.closest('details').open = false;
-  });
-});
-
-// Initialiser la page au chargement
+// Initialisation au chargement de la page
 document.addEventListener('DOMContentLoaded', function() {
+  console.log("Page chargée, initialisation du script...");
+
+  // Ajouter l'icône du panier
   addCartIcon();
   updateCartIndicator();
+
+  // Gérer le clic sur "Ajouter au panier"
+  document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', function(event) {
+      event.preventDefault();
+      const details = this.closest('details');
+      details.open = !details.open;
+    });
+  });
+
+  // Gérer la soumission des formulaires
+  document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const button = form.closest('details').querySelector('.add-to-cart');
+      const productId = button.getAttribute('data-id');
+      const quantityInput = form.querySelector('input[type="number"]');
+      const quantity = parseInt(quantityInput.value) || 1;
+      const priceElement = form.closest('li').querySelector('span:not(.produit)');
+      const priceText = priceElement.textContent.match(/Prix : (\d+)€/);
+      const price = priceText ? parseFloat(priceText[1]) : 0;
+      const productName = getProductName(form);
+
+      // Ajouter ou mettre à jour le produit dans le panier
+      const existingItem = panier.find(item => item.id === productId);
+      if (existingItem) {
+        existingItem.quantity += quantity;
+      } else {
+        panier.push({ id: productId, quantity: quantity, price: price, name: productName });
+      }
+
+      // Sauvegarder dans localStorage
+      localStorage.setItem('cafeDelicePanier', JSON.stringify(panier));
+
+      // Mettre à jour l'indicateur
+      updateCartIndicator();
+
+      // Afficher une confirmation
+      alert(`${productName} ajouté au panier (${quantity} fois) !`);
+
+      // Réinitialiser et fermer
+      form.reset();
+      form.closest('details').open = false;
+    });
+  });
 });
