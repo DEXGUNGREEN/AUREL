@@ -137,8 +137,15 @@ h1 {
     font-weight: 600;
     text-shadow: 6px 6px 6px #333;
     margin-bottom: 15px;
+    transition: transform 1s ease;
 }
  
+#Acc_id:hover {
+    transform: translateY(-4px);
+    font-size: 30px;
+    text-shadow: 9px 0px 8px;
+}
+
             /* Image defilante, menu et produit */
 
 .num1 {
@@ -331,6 +338,14 @@ h1 {
     font-size: 50px;
     font-family: 'Playfair Display';
     font-weight: 100;
+    text-shadow: 0 4px 5px;
+    transition: transform 0.3s  ease;
+}
+
+.mid3:hover {
+    transform: scale(1.2);
+    text-shadow: 9px 0px 9px;
+    font-size: 60px;
 }
 
             /* Fin de page principale */
