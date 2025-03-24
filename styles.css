@@ -100,13 +100,54 @@ h1 {
     padding-bottom: 5px;
 }
 
+@keyframes typing {
+    from {
+        width: 0;
+        text-shadow: 8px 4px 9px rgb(179, 1, 1);
+    }
+    to {
+        width: 100%;
+
+    }
+}
+
+@keyframes blink-caret {
+    from, to { 
+        border-color: transparent; 
+    }
+    50% { 
+        border-color: #430606; 
+    }
+}
+
+/* Animation de mouvement latéral */
+@keyframes move {
+    0% { 
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100% { 
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#mouv_1 {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #000;
+    animation: typing 3s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+    width: 0;
+}
+
             /* Partie accueil */
 
 .middle1 {
     display: flex;
     justify-content: space-around;
     font-size: 60px;
-    /* margin-top: -40px; */
+    margin-top: -40px;
 }    
 
 .mid {
@@ -346,6 +387,10 @@ h1 {
     font-size: 60px;
 }
 
+.social-media {
+    margin-bottom: 20px;
+}
+
             /* Fin de page principale */
 
 .foot {
@@ -385,6 +430,15 @@ footer {
     .middle1 { 
         display: block;
     }
+
+    #mouv_1 {
+        display: block;
+        overflow: hidden;
+        white-space: wrap;
+        border-right: 3px solid #000;
+        animation: typing 1s steps(30, end) forwards, blink-caret 0.5s step-end infinite;
+        width: 0;
+    }
 }
 
 @media (min-width:401px) and (max-width: 768px) {
@@ -396,6 +450,11 @@ footer {
 @media (min-width: 768px) {
     body {
         width: auto;
+    }
+
+    #LOGI {
+        height: 40vh;
+        width: 20vw;
     }
     
     .mobile-menu-toggle {
@@ -418,14 +477,16 @@ footer {
         margin: 0 20px 0 0;
     }
     
-    .main-nav a {
+    .main-nav li a {
         color: white;
         font-weight: bold;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        font-size: 3vw;
     }
-    
+
     .main-nav a:hover {
-        text-decoration: underline;
+        text-decoration: underline black;
+        text-shadow: 0 2px 15px black;
     }
     
 }
