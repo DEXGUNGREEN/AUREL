@@ -112,6 +112,7 @@ h1 {
 .mid {
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     color: #7b243a;
     text-shadow: 4px 4px 4px rgb(156, 72, 105);
@@ -152,6 +153,11 @@ h1 {
     font-size: 36px;
     font-family: 'Dancing Script', serif;
     font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #944a4a;
+    position: relative;
 }
 
 .middle3 {
@@ -169,14 +175,6 @@ h1 {
     margin: 0 auto;
     padding: 20px;
     backdrop-filter: blur(1);
-}
-
-.num1 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    font-weight: 700;
-    color: #944a4a;
-    position: relative;
 }
 
 .num1::after {
@@ -292,7 +290,7 @@ h1 {
     color: rgb(222, 220, 247);
     font-weight: 900;
     text-align: center;
-    display: grid;
+    display: block;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
@@ -383,7 +381,13 @@ footer {
     font-family: 'Tangerine', serif;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
+    .middle1 { 
+        display: block;
+    }
+}
+
+@media (min-width:401px) and (max-width: 768px) {
     .menu-content {
         grid-template-columns: 1fr;
     }
